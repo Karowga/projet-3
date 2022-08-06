@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.53.0"
+  },
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "site de réservations de menus en ligne",
+  "main": "index.html",
+  "scripts": {
+    "index": "sass --watch ./sass/index.scss:CSS/index.css --style compressed",
+    "menu": "sass --watch ./sass/menu1.scss:CSS/menu1.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karowga/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karowga/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Karowga/ohmyfood#readme"
+}
