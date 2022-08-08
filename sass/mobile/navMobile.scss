@@ -1,9 +1,24 @@
 @media screen and (max-width: 768px)
 {
-	body
-{
 
-	background-color: white;
-}
+	.localisation
+	{
+		background-color: yellow;
+		gap: 5%;
+	}
+	.explore_menu
+	{
+		height: 253px;
+	}
 
+	.fonctionnement
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.ongletsfonct
+	{
+		flex-direction: column;
+	}
 }
