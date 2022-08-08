@@ -8,7 +8,6 @@ body
 	margin:  0px;
 }
 
-
 .localisation
 {
     display: flex;  
@@ -18,7 +17,7 @@ body
 	height: 50px;
 	width: 100%;
 	padding-top: 1px;
-    box-shadow: inset 0px 8px 11px -7px black;
+    box-shadow: inset 0px 8px 11px -13px black;
     gap: 1%;
 	
 }
@@ -28,7 +27,7 @@ header
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 55px;
+	height: 65px;
 	margin-bottom: 1px;
 }
 
@@ -254,14 +253,4 @@ footer img
 {
     padding-left: 176px;
     margin-top: -39px;
-}
-
-@media screen and (max-width: 768px)
-{
-	.header
-	{
-		height: 50px;
-        color: #9356DC;
-	}
-
 }
