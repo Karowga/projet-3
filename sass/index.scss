@@ -97,14 +97,12 @@ h2{
 {
 	background-color: #f6f6f6;;
 	height: 70px;
-	width: 300px;
+	width: 320px;
 	border-radius: 25px;
 	margin-bottom: 20px;
 	display: flex;
 	align-items: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    flex-basis: 35%;
+    margin-left: 4px;
     gap: 6%;
     box-shadow: 0px 9px 20px -18px #353535;
 }
@@ -128,12 +126,19 @@ h2{
     background-color: #9356DC;
     align-items: center;
     border-radius: 50%;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     color: white;
     position: relative;
-    left: -9px;
-    font-weight: bold;
+    left: -11px;
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+.fa-solid
+{
+	color: grey;
+	font-size: 140%;
 }
 
 .ongletsfonct p
@@ -254,4 +259,28 @@ footer img
 {
     padding-left: 176px;
     margin-top: -39px;
+}
+
+@media screen and (max-width: 768px)
+{
+
+	.localisation
+	{
+		gap: 5%;
+	}
+	.explore_menu
+	{
+		height: 253px;
+	}
+
+	.fonctionnement
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.ongletsfonct
+	{
+		flex-direction: column;
+	}
 }
