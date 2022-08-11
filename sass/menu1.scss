@@ -28,6 +28,14 @@ header img
 	height: 30px;
 }
 
+.bloc_main
+{
+    background-color: rgb(244, 242, 242);
+    border-radius: 35px 35px 25px 25px;
+    position: relative;
+    margin-top: -30px;
+}
+
 .en_tete_resto img
 {
     height: 250px;
@@ -50,7 +58,6 @@ header img
 
 .menu_container
 {
-    background-color: rgb(244, 242, 242);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -65,29 +72,38 @@ header img
     flex-direction: column;
     text-align: left;
     flex-basis: 30%;
-    margin-top: 11px;
+    margin-top: -16px;
 }
 
 .underline
 {
-    border-bottom: 3px solid #99E2D0;
-    margin-bottom: 14.11px;
-    width: 43px;
+    border-bottom: 4px solid #99E2D0;
+    width: 67px;
+    margin: 0px 0px 15px 10px;
 }
 
 .entree
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
     border-radius: 25px 25px 25px 25px;
     margin-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 25px
 }
 
 .texte p
 {
     margin-top: -13px;
+    font-size: 90%;
+}
+
+h2
+{
+    font-weight: lighter;
+    margin-bottom: 6px;
 }
 
 .prix
@@ -161,4 +177,36 @@ footer img
 {
     height: 290px;
 }
+.fa-heart
+{
+    font-size: 223%;
+}
+.menu_tete
+{
+    padding-top: 17px;
+    margin-left: 22px;
+}
+.position_coeur
+{
+    margin-left: 36px;
+}
+
+.menu_container
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 294px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.bloc_main
+{
+height: 1268px;
+}
+.bouton_commander
+{
+    margin-top: 0;
+}
+
 }
