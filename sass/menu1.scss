@@ -1,5 +1,164 @@
+@import '../node_modules/normalize.css/normalize';
+
+body
+{
+	font-family: raleway;
+	margin:  0px;
+}
+
+header
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65px;
+	margin-bottom: 1px;
+    gap: 15px;
+}
+.fa-arrow-left
+{
+    color: black;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+header img
+{
+	width: 150px;
+	height: 30px;
+}
+
 .en_tete_resto img
 {
-    height: 30px;
+    height: 250px;
     width: 100%;
+}
+
+.menu_tete
+{
+    display: flex;
+    margin-left: 39px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 36px;
+}
+
+.fa-heart
+{
+    font-size: 150%;
+}
+
+.menu_container
+{
+    background-color: rgb(244, 242, 242);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 525px;
+}
+
+.bloc_menu
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-basis: 30%;
+    margin-top: 11px;
+}
+
+.underline
+{
+    border-bottom: 3px solid #99E2D0;
+    margin-bottom: 14.11px;
+    width: 43px;
+}
+
+.entree
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    margin-bottom: 15px;
+}
+
+.texte p
+{
+    margin-top: -13px;
+}
+
+.prix
+{
+    margin-top: 44px;
+    font-weight: bold;
+}
+
+.bouton_commander
+{
+    margin: auto;
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    box-shadow: 3px 3px 10px #b1b1b1;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -31px;
+}
+
+footer{
+    width: 100%;
+    background-color: #353535;
+    flex-wrap: wrap;
+	height: 84px;
+}
+
+.bloc_footer
+{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p
+{
+    color: white;
+}
+.footer_link
+{
+    padding: 20px 0;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+footer img
+{
+	width: 150px;
+	height: 30px;
+}
+
+@media screen and (max-width: 768px)
+{
+
+    header
+    {
+        display: flex;
+        gap: 0;
+    }
+
+.fa-arrow-left
+{
+    margin-left: -82px;
+    font-size: 150%;
+}
+
+.en_tete_resto img
+{
+    height: 290px;
+}
 }
