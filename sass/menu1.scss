@@ -157,6 +157,9 @@ footer img
 	width: 150px;
 	height: 30px;
 }
+.fa-utensils, .fa-handshake-angle {
+    color: #fff;
+}
 
 @media screen and (max-width: 768px)
 {
@@ -175,7 +178,7 @@ footer img
 
 .en_tete_resto img
 {
-    height: 290px;
+    height: 273px;
 }
 .fa-heart
 {
@@ -208,5 +211,33 @@ height: 1268px;
 {
     margin-top: 0;
 }
+
+footer
+	{
+		height: 230px;
+	}
+
+	.footer_link
+	{
+		margin-top: -59px;
+	}
+
+    .bloc_footer
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		align-content: flex-start;
+		padding-left: 26px;
+		padding-top: 27px;
+	}
+	.bloc_footer img
+	{
+		padding-bottom: 40px;
+	}
+    
+    .fa-handshake-angle {
+        font-size: 73%;
+    }
 
 }
