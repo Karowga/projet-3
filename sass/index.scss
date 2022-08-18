@@ -1,12 +1,14 @@
 @import '../node_modules/normalize.css/normalize';
 @import "nav";
-@import "mobile/navMobile";
+
 
 body
 {
 	font-family: raleway;
 	margin:  0px;
 }
+
+
 
 .localisation
 {
@@ -76,10 +78,16 @@ h1
 	width: 230px;
 	border: none;
 	border-radius: 25px 25px 25px 25px;
+	box-shadow: 8px 16px 32px -8px grey;
 	font-size: 16px;
 	cursor: pointer;
 	text-align: center;
     margin-top: 10px;
+	transform: scale(1);
+    &:hover {
+		background: linear-gradient(351deg, #9b6ed3 15%, #f08fd5 85%);
+		box-shadow: 8px 6px 40px -8px black;
+    }
 }
 
 .fonctionnement
@@ -105,6 +113,11 @@ h2{
     margin-left: 4px;
     gap: 6%;
     box-shadow: 0px 9px 20px -18px #353535;
+	transform: scale(1);
+    &:hover {
+		background: #f3eff7;
+		box-shadow: 5px 10px 30px -10px grey;
+    }
 }
 
 .ongletsfonct
@@ -279,7 +292,7 @@ footer img
 }
 
 .fa-utensils,
-.fa-handshake-angle,
+.fa-handshake-angle
 {
 	color: white;
 }
@@ -309,97 +322,4 @@ footer img
     margin-left: 136px
 }
 
-@media screen and (max-width: 768px)
-{
-
-	.localisation
-	{
-		gap: 5%;
-	}
-	.explore_menu
-	{
-		height: 253px;
-	}
-
-	.fonctionnement
-	{
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.ongletsfonct
-	{
-		flex-direction: column;
-		gap: none;
-	}
-	.carte_resto
-	{
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		background-color: #f5f1f1;
-		margin: 0;
-		gap: 0;
-	}
-
-	.carte_resto h2,
-	{
-		padding-left: 20px;
-		padding-top: 35px;
-	}
-
-	.case_resto
-	{
-		margin: 0%;
-		height: 240px;
-	}
-
-	.carte_resto > div
-{
-	padding-left: 16px;
-	padding-right: 16px;
-	padding-top: 0;
-	padding-bottom: 0%;
-	border-radius: 16px;
-	gap: 25px;
-}
-	.case_resto img {
-		height: 167px;
-	}
-
-	.resto_card
-	{
-		margin-top: -158px;
-    	margin-left: 245px;
-	}
-
-	footer
-	{
-		height: 224px;
-	}
-
-	.footer_link
-	{
-		margin-top: -59px;
-	}
-
-	.bloc_footer
-	{
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		align-content: flex-start;
-		padding-left: 26px;
-		padding-top: 27px;
-	}
-	.bloc_footer img
-	{
-		padding-bottom: 40px;
-	}
-
-	.fa-handshake-angle
-	{
-		font-size: 73%;
-	}
-
-}
+@import "mobile/indexMobile";
