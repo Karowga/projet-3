@@ -297,9 +297,23 @@ footer img
 	color: white;
 }
 
-.coeur
+.coeur_empty
 {
-	padding-right: 10px;
+	margin-right: 21px;
+}
+.coeur_full
+{
+	margin-right: -29px;
+	font-size: 157%;
+	color: transparent;
+	transform: scale(1);
+	transition-property: transform;
+    transition-duration: 1000ms;
+    &:hover {
+		color: #FF79DA;
+		opacity: 1;
+		transition: 2s;
+}
 }
 
 .fa-regular
