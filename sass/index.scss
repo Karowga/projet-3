@@ -338,6 +338,7 @@ footer img
 
 .loader
 {
+	$animation-duration: 3s;
 	position: fixed;
 	display: grid;
 	place-items: center;
@@ -346,9 +347,12 @@ footer img
 	inset: 0;
 	z-index: 1;
 	opacity: 0.9;
-	animation: disappear 200ms forwards; 
+	animation: disappear 200ms $animation-duration forwards; 
 	animation-delay: 3s;
 	transform-origin: top;
+	i{
+		animation: spin $animation-duration linear;
+	}
 }
 
 @keyframes disappear
@@ -358,6 +362,12 @@ footer img
 		transform: scale(0);
 	}
 
+}
+
+@keyframes spin {
+	to{
+		transform: rotate(360deg)
+	}
 }
 
 @import "mobile/indexMobile";
