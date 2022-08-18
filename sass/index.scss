@@ -336,4 +336,26 @@ footer img
     margin-left: 136px
 }
 
+.loader
+{
+	position: fixed;
+	height: 100vh;
+	background-color: #ffffff;
+	inset: 0;
+	z-index: 1;
+	opacity: 0.9;
+	animation: disappear
+}
+@keyframes disappear
+{
+	0%
+	{
+		transform: scale(1);
+	}
+	100%
+	{
+		transform: scale(0);
+	}
+}
+
 @import "mobile/indexMobile";
