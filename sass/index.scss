@@ -338,20 +338,26 @@ footer img
 
 .loader
 {
-	$animation-duration: 3s;
+	$animation-duration: 1s;
 	position: fixed;
 	display: grid;
 	place-items: center;
 	height: 100vh;
-	background-color: #ffffff;
+	background: linear-gradient(351deg, #9356DC 15%, #FF79DA 85%);
 	inset: 0;
 	z-index: 1;
-	opacity: 0.9;
-	animation: disappear 200ms $animation-duration forwards; 
+	opacity: 0.5;
+	animation: disappear 400ms $animation-duration forwards; 
 	animation-delay: 3s;
-	transform-origin: top;
-	i{
-		animation: spin $animation-duration linear;
+	transform-origin: center;
+	&::after{
+		content: "";
+		height: 100px;
+		width: 100px;
+		border-right: 5px solid transparent;
+		border-top: 5px solid white;
+		border-radius: 50%;
+		animation: spin $animation-duration infinite ease-in-out;
 	}
 }
 
