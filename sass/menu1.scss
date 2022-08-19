@@ -73,6 +73,7 @@ header img
     text-align: left;
     flex-basis: 30%;
     margin-top: -16px;
+    overflow: hidden;
 }
 
 .underline
@@ -98,6 +99,8 @@ header img
     border-radius: 25px 25px 25px 25px;
     margin-bottom: 15px;
     padding-left: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     overflow: hidden;
     animation: appear 3s;
     &:hover .anim_plat 
@@ -113,40 +116,48 @@ header img
     width: 62px;
     border-radius: 0 20px 20px 0;
     transition: all 1s;
-    display: flex;
-    align-items: center;
+    display: grid;
+    place-items: center;
     justify-content: center;
-}
-
-.fa-check
-{
-    background: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-}
-
-.center_item_check
-{
-    display: flex;
-    align-items: center;
+    i{
+        display: grid;
+        place-items: center;
+        background: white;
+        aspect-ratio: 1;
+        width: 23px;
+        border-radius: 1rem;
+        color: #99E2D0;
+    }
 }
 
 .texte p
 {
     margin-top: -13px;
     font-size: 90%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .texte
 {
     margin-right: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 h2
 {
     font-weight: lighter;
     margin-bottom: 6px;
+}
+
+h3
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .prix
@@ -251,6 +262,12 @@ footer img
 {
 height: 1268px;
 }
+
+.bloc_menu
+{
+    overflow: visible;
+}
+
 .bouton_commander
 {
     margin-top: 0;

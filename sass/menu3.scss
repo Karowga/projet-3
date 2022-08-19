@@ -4,6 +4,7 @@ body
 {
 	font-family: raleway;
 	margin:  0px;
+    color: red;
 }
 
 header
@@ -73,6 +74,7 @@ header img
     text-align: left;
     flex-basis: 30%;
     margin-top: -16px;
+    overflow: hidden;
 }
 
 .underline
@@ -84,21 +86,69 @@ header img
 
 .entree
 {
+    @for $i from 1 through 4
+    {
+        &:nth-child(#{$i})
+        {
+           animation-delay: 200ms * $i;
+        }
+    }
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;
-    justify-content: space-between;
     background-color: white;
     border-radius: 25px 25px 25px 25px;
     margin-bottom: 15px;
     padding-left: 16px;
-    padding-right: 25px
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    animation: appear 3s;
+    &:hover .anim_plat 
+{
+    margin-right: 0;
 }
+}
+
+.anim_plat
+{
+    background-color: #99E2D0;
+    margin-right: -62px;
+    width: 62px;
+    border-radius: 0 20px 20px 0;
+    transition: all 1s;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    i{
+        display: grid;
+        place-items: center;
+        background: white;
+        aspect-ratio: 1;
+        width: 23px;
+        border-radius: 1rem;
+        color: #99E2D0;
+    }
+}
+
 
 .texte p
 {
     margin-top: -13px;
     font-size: 90%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+
+.texte
+{
+    margin-right: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 
 h2
 {
@@ -106,10 +156,19 @@ h2
     margin-bottom: 6px;
 }
 
+h3
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
 .prix
 {
     margin-top: 44px;
     font-weight: bold;
+    margin-right: 10px;
 }
 
 .bouton_commander
