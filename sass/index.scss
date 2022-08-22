@@ -278,17 +278,19 @@ footer p
 {
     color: white;
 }
+
+.logo_white
+{
+	font-family: shrikhand;
+	font-size: 140%;
+}
+
 .footer_link
 {
     padding: 20px 0;
     display: flex;
     gap: 9px;
     align-items: center;
-}
-footer img
-{
-	width: 150px;
-	height: 30px;
 }
 
 .fa-utensils,

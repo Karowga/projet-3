@@ -2,7 +2,7 @@
 
 body
 {
-	font-family: raleway;
+	font-family: roboto;
 	margin:  0px;
 }
 
@@ -200,6 +200,13 @@ footer p
 {
     color: white;
 }
+
+.logo_white
+{
+	font-family: shrikhand;
+	font-size: 140%;
+}
+
 .footer_link
 {
     padding: 20px 0;
@@ -207,13 +214,11 @@ footer p
     gap: 9px;
     align-items: center;
 }
-footer img
+
+.fa-utensils,
+.fa-handshake-angle
 {
-	width: 150px;
-	height: 30px;
-}
-.fa-utensils, .fa-handshake-angle {
-    color: #fff;
+	color: white;
 }
 
 @media screen and (max-width: 768px)
@@ -300,6 +305,7 @@ footer
     .fa-handshake-angle {
         font-size: 73%;
     }
+    
 
 }
 
