@@ -10,6 +10,14 @@
 	{
 		width: 704px;
 	}
+	.resto_card
+	{
+		margin-left: 579px;
+	}
+	.ongletsfonct
+	{
+		flex-direction: column;
+	}
 }
 
 
@@ -29,7 +37,6 @@
 
 	.fonctionnement
 	{
-		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -42,10 +49,16 @@
 	{
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 		background-color: #f5f1f1;
 		margin: 0;
 		gap: 0;
+	}
+.bloc_resto
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.carte_resto h2
@@ -58,6 +71,7 @@
 	{
 		margin: 0%;
 		height: 240px;
+		width: 324px;
 	}
 
 	.carte_resto > div
@@ -76,7 +90,7 @@
 	.resto_card
 	{
 		margin-top: -158px;
-    	margin-left: 245px;
+    	margin-left: 226px;
 	}
 
 	footer
