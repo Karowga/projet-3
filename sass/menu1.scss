@@ -27,6 +27,11 @@ header img
 	width: 150px;
 	height: 30px;
 }
+h1
+{
+    font-family: shrikhand;
+    font-size: 174%;
+}
 
 .bloc_main
 {
@@ -38,7 +43,7 @@ header img
 
 .en_tete_resto img
 {
-    height: 250px;
+    height: 400px;
     width: 100%;
 }
 
@@ -46,7 +51,7 @@ header img
 {
     display: flex;
     margin-left: 39px;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     gap: 36px;
 }
@@ -105,7 +110,7 @@ header img
     animation: appear 4s;
     &:hover .anim_plat 
 {
-    margin-right: 0;
+    margin-right: 0px;
 }
 }
 
@@ -158,6 +163,26 @@ h3
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.coeur_empty
+{
+	margin-right: 21px;
+}
+
+.coeur_full
+{
+	margin-right: -29px;
+	font-size: 157%;
+	color: transparent;
+	transform: scale(1);
+	transition-property: transform;
+    transition-duration: 1000ms;
+    &:hover {
+		color: #FF79DA;
+		opacity: 1;
+		transition: 2s;
+}
 }
 
 .prix
@@ -242,16 +267,31 @@ footer p
 }
 .fa-heart
 {
-    font-size: 223%;
+    font-size: 200%;
 }
 .menu_tete
 {
     padding-top: 17px;
     margin-left: 22px;
 }
-.position_coeur
+.coeur_empty
 {
-    margin-left: 36px;
+	margin-right: 21px;
+}
+
+.coeur_full
+{
+	margin-right: -37px;
+	font-size: 206%;
+	color: transparent;
+	transform: scale(1);
+	transition-property: transform;
+    transition-duration: 1000ms;
+    &:hover {
+		color: #FF79DA;
+		opacity: 1;
+		transition: 2s;
+}
 }
 
 .menu_container
