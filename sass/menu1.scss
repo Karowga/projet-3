@@ -89,7 +89,7 @@ header img
     {
         &:nth-child(#{$i})
         {
-           animation-delay: 200ms * $i;
+           animation-delay: 300ms * $i;
         }
     }
     display: flex;
@@ -102,7 +102,7 @@ header img
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    animation: appear 3s;
+    animation: appear 4s;
     &:hover .anim_plat 
 {
     margin-right: 0;
@@ -313,7 +313,7 @@ footer
 {
     0%
     {
-        transform: translateY(50%);
+        transform: translateY(70%);
         opacity: 0;
     }
     100%
