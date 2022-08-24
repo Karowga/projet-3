@@ -246,14 +246,14 @@ a
 	object-fit: cover;
 }
 
-.titre_adresse p,
+.titre_adresse p
 {
 	margin-left: 4px;
     padding-left: 5px;
     margin-top: 1px;
 }
 
-.case_resto h3,
+.case_resto h3
 {
 	font-size: 110%;
 	margin: 4px;
@@ -299,6 +299,7 @@ footer p
     display: flex;
     gap: 9px;
     align-items: center;
+	cursor: pointer;
 }
 
 .fa-utensils,

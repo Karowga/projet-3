@@ -9,7 +9,7 @@
   "main": "index.html",
   "scripts": {
     "index": "sass --watch ./sass/index.scss:CSS/index.css --style compressed",
-    "menu": "sass --watch ./sass/menu1.scss:CSS/menu1.css --style compressed"
+    "restaurant": "sass --watch ./sass/restaurant.scss:CSS/restaurant.css --style compressed"
   },
   "repository": {
     "type": "git",
