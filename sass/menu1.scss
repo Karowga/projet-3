@@ -139,6 +139,7 @@ h1
 {
     margin-top: -13px;
     font-size: 90%;
+    font-weight: lighter;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -199,11 +200,17 @@ h3
     padding: 15px;
     border-radius: 25px;
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    box-shadow: 3px 3px 10px #b1b1b1;
+    box-shadow: 8px 16px 32px -8px grey;
     width: 150px;
     text-align: center;
     text-decoration: none;
     margin-top: -31px;
+    cursor: pointer;
+    transform: scale(1);
+    &:hover {
+		background: linear-gradient(351deg, #9b6ed3 15%, #f08fd5 85%);
+		box-shadow: 8px 6px 40px -8px black;
+    }
 }
 
 footer{
@@ -238,6 +245,12 @@ footer p
     display: flex;
     gap: 9px;
     align-items: center;
+    cursor: pointer;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 .fa-utensils,
@@ -335,7 +348,7 @@ footer
 		align-items: flex-start;
 		align-content: flex-start;
 		padding-left: 26px;
-		padding-top: 27px;
+		padding-top: 12px;
 	}
 	.bloc_footer img
 	{
@@ -346,8 +359,14 @@ footer
         font-size: 73%;
     }
     
+        .logo_white
+        {
+            margin-bottom: 20px;
+        }
+ }
+    
 
-}
+
 
 @keyframes appear
 {
