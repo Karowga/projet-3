@@ -108,9 +108,13 @@ h1
     text-overflow: ellipsis;
     overflow: hidden;
     animation: appear 4s;
-    &:hover .anim_plat 
+    &:hover {.anim_plat 
 {
     margin-right: 0px;
+}
+i {
+    animation: quarterspin 1s;
+}
 }
 }
 
@@ -379,5 +383,14 @@ footer
     {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@keyframes quarterspin {
+    0% {
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(0);
     }
 }
