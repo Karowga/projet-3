@@ -67,7 +67,7 @@ h1
 .explore_menu p
 {
     margin-top: -2px;
-	width: 82%;
+	width: 72%;
 	font-weight: lighter;
 	color: #717473;
 }
@@ -232,6 +232,7 @@ a
 .case_resto:hover
   {
 	transform: scale(1.01);
+	box-shadow: 0 0 11px black;
   }
 
 .case_resto h3 {
